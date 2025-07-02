@@ -387,6 +387,6 @@ int main() {
     }
     // 可视化图片
     writeDotFile(root, TREE_IMAGE_PATH);
-    printf("Decision tree exported to %d\n",TREE_IMAGE_PATH);
+    printf("Decision tree exported to %s\n",TREE_IMAGE_PATH);
     return 0;
 }
