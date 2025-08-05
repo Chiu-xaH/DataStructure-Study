@@ -66,8 +66,8 @@ void QuickSortRecursive(List *L,int start,int end) {
     //枢轴回到空格位置
     Swap(L,start,right);
 
-    QuickSortRecursive(L,start,left-1);
-    QuickSortRecursive(L,left+1,end);
+    QuickSortRecursive(L,start,right-1);
+    QuickSortRecursive(L,right+1,end);
 }
 
 void QuickSort(List *L) {
