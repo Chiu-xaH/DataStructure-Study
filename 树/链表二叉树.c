@@ -497,37 +497,6 @@ void PublicParent(Tree T,int i,int j) {
     } else {
         printf("Nearest is NULL");
     }
-//     char pathI[MAXSIZE] = {0};
-//     char pathJ[MAXSIZE] = {0};
-//     Tree nodeI = NULL,nodeJ = NULL;
-//     Find(T,i,&nodeI);
-//     Find(T,j,&nodeJ);
-    
-//     GetLoad(T,nodeI,0,pathI);
-//     int lengthI = pathSize;
-//     for(int ii = 0;ii < lengthI;ii++) {
-//         pathI[ii] = path2[ii];
-//     }
-    
-//     GetLoad(T,nodeJ,0,pathJ);
-//     int lengthJ = pathSize;
-//     for(int ii = 0;ii < lengthJ;ii++) {
-//         pathJ[ii] = path2[ii];
-//     } 
-// ////初始化////////////////////////////
-//     int ptrI = 0,ptrJ = 0;
-//     int min = 0;
-   
-//     while(ptrI < lengthI && ptrJ < lengthJ) {
-//         if(pathI[ptrI] == pathJ[ptrJ]) {
-//             min = ptrI;
-//             ptrI++;
-//             ptrJ++;
-//         } else {
-//             break;
-//         }
-//     }
-//     return pathI[min];
 }
 // 键盘输入一个元素x，求其父节点、兄弟结点、子结点的值，不存在时给出相应提示信息。对兄弟结点和孩子结点，存在时要明确指出是左兄弟、左孩子、右兄弟或右孩子。
 void PrintNodeRelation(Tree T,ElemTypes X) {

@@ -460,3 +460,61 @@ public:
         return res;
     }
 };
+
+
+
+/*
+
+给你一棵以 root 为根的二叉树，二叉树中的交错路径定义如下：
+
+选择二叉树中 任意 节点和一个方向（左或者右）。
+如果前进方向为右，那么移动到当前节点的的右子节点，否则移动到它的左子节点。
+改变前进方向：左变右或者右变左。
+重复第二步和第三步，直到你在树中无法继续移动。
+交错路径的长度定义为：访问过的节点数目 - 1（单个节点的路径长度为 0 ）。
+
+请你返回给定树中最长 交错路径 的长度。
+*/
+int order(struct TreeNode* tree,bool goToLeft) {
+    if(tree == NULL) {
+        return 0;
+    }
+    if(goToLeft) {
+        return order(tree->left,false) + 1;
+    } else {
+        return order(tree->right,true) + 1;
+    }
+}
+int max(int a,int b) {
+    if(a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+// 得到结点的最长交错路径长度
+int nodeMaxLength(struct TreeNode* tree) {
+    int left = order(tree->right,true);
+    int right = order(tree->left,false);
+    return max(left,right);
+}
+void preOrder(struct TreeNode* root,int* maxValue) {
+    if(root == NULL) {
+        return;
+    }
+    if(root->left == NULL && root->right == NULL) {
+        return;
+    }
+    int currentValue = nodeMaxLength(root);
+    if(currentValue > *maxValue) {
+        *maxValue = currentValue;
+    }
+    preOrder(root->left,maxValue);
+    preOrder(root->right,maxValue);
+}
+// 遍历每一个非叶子结点的nodeMaxLength比较最大值
+int longestZigZag(struct TreeNode* root) {
+    int maxValue = 0;
+    preOrder(root,&maxValue);
+    return maxValue;
+}
