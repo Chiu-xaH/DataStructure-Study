@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Queue.h"
-
+#include <limits.h>
 #define OK 1
 #define ERROR 0
 #define MAXSIZE 100
@@ -256,6 +256,17 @@ Status isBinaryTree(Tree T) {
         ptr++;
     }
     return OK;
+}
+
+
+Status helper(Tree T, long min, long max) {
+    if (T == NULL) return OK;
+    if (T->data <= min || T->data >= max) return ERROR;
+    return helper(T->leftChild, min, T->data) && helper(T->rightChild, T->data, max);
+}
+
+Status isBST(struct TreeNode* root) {
+    return helper(root, LONG_MIN, LONG_MAX);
 }
 
 int main() {
