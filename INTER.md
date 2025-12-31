@@ -28,7 +28,7 @@
 
 经历写的时候记得量化数据，比如提升百分之多少
 
-需要我的简历的点[这里](OTHER%E8%B5%84%E6%96%99%5C%E5%AE%9E%E4%B9%A0%E7%AF%87%5C%E7%AE%80%E5%8E%86.jpg)
+需要我的简历的点[这里](https://github.com/Chiu-xaH/DataStructure-Study/blob/main/OTHER%E8%B5%84%E6%96%99/%E5%AE%9E%E4%B9%A0%E7%AF%87/%E7%AE%80%E5%8E%86.jpg)
 
 ## 投简历
 各个公司的官网，BOSS直聘，实习僧；推荐先用BOSS，BOSS已读不回再去官网投。
@@ -59,7 +59,7 @@
 如果面试官先自我介绍，那应该是个有操守的人，估计会比较顺利，当然他不介绍也无所谓
 
 ## 八股（必考）
-![思维导图](OTHER%E8%B5%84%E6%96%99%5C%E5%AE%9E%E4%B9%A0%E7%AF%87%5C%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1.png)
+![思维导图](https://github.com/Chiu-xaH/DataStructure-Study/blob/main/OTHER%E8%B5%84%E6%96%99/%E5%AE%9E%E4%B9%A0%E7%AF%87/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1.png)
 
 - 简历里写的技术栈的用法、原理、看过源码实现吗（不断深挖，直到问不出来为止，只要能接住几个问题就行了，不会是正常的）
 - 编程语言的一些用法，这个看行业，比如线程、协程之类的
